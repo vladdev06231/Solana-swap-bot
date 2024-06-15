@@ -1,0 +1,21 @@
+[features]
+seeds = false
+
+[programs.localnet]
+solswap = "9fuV5utLoM5U81FQoiZLYB3moJzyJcV477cTpDYArmV1"
+
+[programs.devnet]
+solswap = "9fuV5utLoM5U81FQoiZLYB3moJzyJcV477cTpDYArmV1"
+
+[programs.mainnet]
+solswap = "9fuV5utLoM5U81FQoiZLYB3moJzyJcV477cTpDYArmV1"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "localnet"
+wallet = "tests/test.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/solswap.ts"
